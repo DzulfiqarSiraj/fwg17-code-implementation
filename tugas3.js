@@ -13,7 +13,7 @@ function FazzFood(harga, voucher, jarak, pajak){
     console.log(`Tidak dapat menggunakan voucher "${voucher}", total belanja minimal sebesar 50000 untuk dapat menggunakan voucher ini`);
   } else if(harga < 25000 && voucher === 'DITRAKTIR60'){
     console.log(`Tidak dapat menggunakan voucher "${voucher}", total belanja minimal sebesar 25000 untuk dapat menggunakan voucher ini`);
-  } else if((harga >= 50000 && (voucher === 'FAZZFOOD50' || voucher === 'DITRAKTIR60')) || (harga < 50000 && harga >= 25000 && voucher === 'DITRAKTIR60')){
+  } else {
     console.log(`Berhasil menggunakan voucher "${voucher}"`)
   }
 
@@ -60,4 +60,4 @@ function FazzFood(harga, voucher, jarak, pajak){
 -----------------------------------`)
 }
 
-FazzFood(75000, voucher50, 5, true)
+FazzFood(200000, voucher60, 5, true)
