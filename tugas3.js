@@ -60,4 +60,4 @@ function FazzFood(harga, voucher, jarak, pajak){
 -----------------------------------`)
 }
 
-FazzFood(200000, voucher60, 5, true)
+FazzFood(75000, voucher50, 5, true)
