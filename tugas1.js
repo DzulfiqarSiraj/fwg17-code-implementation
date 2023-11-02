@@ -1,5 +1,5 @@
-const voucher1 = 'FAZZFOOD50';
-const voucher2 = 'DITRAKTIR60';
+const voucher50 = 'FAZZFOOD50';
+const voucher60 = 'DITRAKTIR60';
 
 function FazzFood(harga, voucher, jarak, pajak){
   if(jarak < 0){
@@ -48,7 +48,7 @@ function FazzFood(harga, voucher, jarak, pajak){
     ongkir += (3000 * (jarak - 2));
   }
 
-  // Kalkulasi total harga
+  // Kalkulasi sub-total
   subTotal = biayaSetelahDiscount + ongkir + hargaSetelahPajak;
 
   console.log(`-----------------------------
@@ -61,4 +61,4 @@ function FazzFood(harga, voucher, jarak, pajak){
 -----------------------------`)
 }
 
-FazzFood(24000, voucher1, 5,true)
+FazzFood(75000, voucher50, 5, true)
