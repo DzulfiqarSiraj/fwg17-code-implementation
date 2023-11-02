@@ -18,7 +18,6 @@ function FazzFood(harga, voucher, jarak, pajak){
   }
 
   let discount = 0
-  let subTotal = 0;
   let biayaSetelahDiscount = harga
   let hargaSetelahPajak = 0;
   let ongkir = 5000
@@ -49,16 +48,16 @@ function FazzFood(harga, voucher, jarak, pajak){
   }
 
   // Kalkulasi sub-total
-  subTotal = biayaSetelahDiscount + ongkir + hargaSetelahPajak;
+  const subTotal = biayaSetelahDiscount + ongkir + hargaSetelahPajak;
 
-  console.log(`-----------------------------
+  console.log(`-----------------------------------
   Biaya = ${harga}
   Discount = ${discount}
   Biaya Pengiriman = ${ongkir}
   Pajak = ${hargaSetelahPajak}
------------------------------
-  Sub-Total = ${subTotal}
------------------------------`)
+-----------------------------------
+  sub-Total = ${subTotal}
+-----------------------------------`)
 }
 
 FazzFood(75000, voucher50, 5, true)
