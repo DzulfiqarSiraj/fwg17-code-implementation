@@ -19,9 +19,9 @@ function sortedArray(arr){
 
 function divideAndSort(num){
   let strNum = num + "";
-
   let hasil = ""
   let arrTemp = []
+  
   for(let i = 0; i < strNum.length; i++){
     arrTemp = [...arrTemp, strNum[i]]
     if(strNum[i] === "0" || i === strNum.length -1){
